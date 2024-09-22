@@ -1,0 +1,37 @@
+/* Set up the body as a flex container with a column direction */
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0; /* Reset default margin */
+    height: 100vh; /* Ensure body takes full height */
+}
+
+/* Set up the main section as a flex container with a row direction */
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto; /* Allow main to grow and take available space */
+}
+
+/* Style for article */
+article {
+    flex: 2; /* Take 2/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Add some padding */
+    background-color: #fff; /* Optional: set background color */
+}
+
+/* Style for aside */
+aside {
+    flex: 1; /* Take 1/3 of the width */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 10px; /* Add some padding */
+    background-color: #f4f4f4; /* Optional: set background color */
+}
+
+/* Optional: Style for header and footer */
+header, footer {
+    padding: 10px; /* Add some padding */
+    background-color: #ccc; /* Optional: set background color */
+    text-align: center; /* Center the content */
+}
